@@ -1,3 +1,9 @@
 var webApplicationBuilder = WebApplication.CreateBuilder(args);
+
 webApplicationBuilder.Services.AddControllers();
-webApplicationBuilder.Build().Run();
+
+var webApplication = webApplicationBuilder.Build();
+
+webApplication.MapControllers();
+
+webApplication.Run();
