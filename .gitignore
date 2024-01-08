@@ -1,0 +1,5 @@
+/.idea
+
+/Satma.Akane.HttpApi/bin
+/Satma.Akane.HttpApi/obj
+/Satma.Akane.HttpApi/appsettings.*.json
