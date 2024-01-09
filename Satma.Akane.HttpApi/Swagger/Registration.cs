@@ -17,6 +17,7 @@ internal static class Registration
         {
             options.SwaggerDoc(apiVersion, openApiInfo);
             options.SchemaFilter<ValidationProblemDetailsResponseSchema>();
+            options.IncludeXmlDocumentation();
         });
 
     public static void UseSwaggerSpecification(this WebApplication webApplication)
