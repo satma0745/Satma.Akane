@@ -7,15 +7,15 @@ namespace Satma.Akane.HttpApi.UseCases;
 public sealed class SpentTimeDto
 {
     /// <example>Trevor Smith</example>
-    [Required, MinLength(5)]
+    [Required, Length(5, 35)]
     public required string TeamMemberName { get; init; }
     
     /// <example>Akane</example>
-    [Required, MinLength(3)]
+    [Required, Length(3, 20)]
     public required string ProjectTitle { get; init; }
     
     /// <example>QA</example>
-    [Required, MinLength(2)]
+    [Required, Length(2, 15)]
     public required string ActivityDescription { get; init; }
     
     /// <example>120</example>
